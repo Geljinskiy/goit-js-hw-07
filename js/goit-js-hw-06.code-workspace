@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\gh-fold\\goit-js-hw-06"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "src",
+    "liveServer.settings.port": 5501
+  }
+}
