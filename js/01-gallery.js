@@ -32,12 +32,14 @@ gallery.addEventListener('click', event => {
   const imgInsertLayout = `<img class="gallery__image" src="${event.target.dataset.source}" data-source="${event.target.dataset.source}" alt="${event.target.alt}">`;
 
   const modalWindow = basicLightbox.create(imgInsertLayout, {
+    //отключено закрытие окна по клику
     closable: false,
   });
 
   modalWindow.show();
 
   window.addEventListener('keydown', ev => {
+    //добавлено закрытие окна только по "Escape"
     if (ev.key === 'Escape') {
       modalWindow.close();
     }
